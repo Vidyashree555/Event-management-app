@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { getPastEvents, getUpcomingEvents } from "../api";
+import { Calendar, Clock, Users } from "lucide-react";
+import EventCard from "./EventCard";
 
 const EventList = ({ refreshKey }) => {
   const [upcoming, setUpcoming] = useState([]);
